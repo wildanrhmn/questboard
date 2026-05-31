@@ -1,8 +1,8 @@
 import { network } from "hardhat"
 
-const BOARD = "0xB362A6b349940f1086FC4834fE1EdE42544A1758" as `0x${string}`   // addresses from deploy
-const TOKEN = "0x370C6f14d8AF4e7e014Dc308DDFCE4322101Cffe" as `0x${string}`
-const BADGE = "0xaB9D6c115876878Aa716745972B6Ec3434E9d35C" as `0x${string}`
+const BOARD = "0xc8587689E5197bDEDb39B55a915AA4FF5A3b2827" as `0x${string}`   // quest-system-v2
+const TOKEN = "0xe4cdc2b610CF13584b884383bfEA3237009CA501" as `0x${string}`
+const BADGE = "0xf0c422C7f159fACD5a0DC001F65Dd8152A8462f2" as `0x${string}`
 
 const { viem } = await network.create()
 const pub = await viem.getPublicClient()

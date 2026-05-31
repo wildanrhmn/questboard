@@ -8,7 +8,11 @@ const config: HardhatUserConfig = {
   networks: {
     sepolia: {
       type: "http",
-      url: "https://ethereum-sepolia-rpc.publicnode.com",
+      // Drop a dedicated RPC (Alchemy/Infura) in .env as SEPOLIA_RPC_URL for
+      // rock-solid nonce handling; falls back to the public node otherwise.
+      url:
+        process.env.SEPOLIA_RPC_URL ??
+        "https://ethereum-sepolia-rpc.publicnode.com",
       accounts: [process.env.SEPOLIA_PRIVATE_KEY!],
     },
   },

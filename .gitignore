@@ -1,6 +1,7 @@
-# This repo only tracks the questboard/ project.
+# This repo tracks the questboard/ and questboard-frontend/ projects.
 # Ignore every top-level entry...
 /*
-# ...except the questboard folder and this .gitignore.
+# ...except these folders and this .gitignore.
 !/questboard/
+!/questboard-frontend/
 !/.gitignore
