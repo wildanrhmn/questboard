@@ -14,16 +14,16 @@ contract QuestBadge is ERC721, ERC721URIStorage, Ownable {
     ) ERC721("Quest Badge", "QB") Ownable(initialOwner) {}
 
     function setMinter(address _minter) external onlyOwner {
-    minter = _minter;
-}
+        minter = _minter;
+    }
 
-modifier onlyMinter() {
-    require(
-        msg.sender == owner() || msg.sender == minter,
-        "not authorized to mint"
-    );
-    _;
-}
+    modifier onlyMinter() {
+        require(
+            msg.sender == owner() || msg.sender == minter,
+            "not authorized to mint"
+        );
+        _;
+    }
 
     function safeMint(
         address to,
