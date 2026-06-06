@@ -32,3 +32,6 @@ export const LinkIcon = ({ className }: P) => (
 export const LockIcon = ({ className }: P) => (
   <svg {...base} className={className}><rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>
 )
+export const SendIcon = ({ className }: P) => (
+  <svg {...base} className={className}><path d="M22 2 11 13" /><path d="M22 2 15 22l-4-9-9-4 20-7Z" /></svg>
+)

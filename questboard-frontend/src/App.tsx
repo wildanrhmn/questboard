@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar"
 import { StatsRow } from "./components/StatsRow"
 import { QuestList } from "./components/QuestList"
 import { BadgeShowcase } from "./components/BadgeShowcase"
+import { TransferPanel } from "./components/TransferPanel"
 import { OwnerPanel } from "./components/OwnerPanel"
 import { ConnectButton } from "./components/ConnectButton"
 import { SparkleIcon } from "./components/icons"
@@ -64,7 +65,12 @@ export default function App() {
 
         <QuestList />
 
-        {isConnected && !wrongNetwork && <OwnerPanel />}
+        {isConnected && !wrongNetwork && (
+          <>
+            <TransferPanel />
+            <OwnerPanel />
+          </>
+        )}
       </main>
 
       <footer className="footer container">

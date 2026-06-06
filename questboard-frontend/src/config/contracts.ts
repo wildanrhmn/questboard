@@ -40,6 +40,7 @@ export const erc20Abi = parseAbi([
   "function balanceOf(address) view returns (uint256)",
   "function symbol() view returns (string)",
   "function decimals() view returns (uint8)",
+  "function transfer(address to, uint256 amount) returns (bool)",
 ])
 
 /** QuestBadge — ERC-721 milestone NFT (only the bits we read). */
